@@ -1,0 +1,67 @@
+[
+    {
+      "group": "v1",
+      "data": [
+        {
+          "name": "Create Book",
+          "methods": [
+            "POST",
+            "OPTIONS"
+          ],
+          "path": "/books",
+          "handler": "CreateBook",
+          "isPublic": true
+        },
+        {
+          "name": "Bulk Insert",
+          "methods": [
+            "POST",
+            "OPTIONS"
+          ],
+          "path": "/books/insert",
+          "handler": "BulkInsert",
+          "isPublic": true
+        },
+        {
+          "name": "Get List Book",
+          "methods": [
+            "GET",
+            "OPTIONS"
+          ],
+          "path": "/books",
+          "handler": "GetListBook",
+          "isPublic": true
+        },
+        {
+          "name": "Select Book Detail",
+          "methods": [
+            "GET",
+            "OPTIONS"
+          ],
+          "path": "/books/{id}",
+          "handler": "GetBookByID",
+          "isPublic": true
+        },
+        {
+          "name": "Update Book",
+          "methods":[
+              "PUT",
+              "OPTIONS"
+          ],
+          "path": "/books/{id}",
+          "handler": "UpdateBook",
+          "isPublic": true
+        },
+        {
+          "name": "Delete Book",
+          "methods":[
+              "DELETE",
+              "OPTIONS"
+          ],
+          "path": "/books/{id}",
+          "handler": "DeleteBook",
+          "isPublic": true
+        }
+      ]
+    }
+  ]
